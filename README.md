@@ -1,2 +1,2 @@
 # kate-queue-web
-katequeue.com web
+katequeue landing page
