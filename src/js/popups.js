@@ -1,9 +1,10 @@
 "use strict";
 
 //collapsible
-const cdesign = document.querySelector(".js-cdesign");
-const cfill = document.querySelector(".js-cfill");
-const cshare = document.querySelector(".js-cshare");
+const popBio = document.querySelector(".js-bio-pop");
+const popWork = document.querySelector(".js-work-pop");
+const popHobbies = document.querySelector(".js-hobbies-pop");
+const popContact = document.querySelector(".js-contact-pop");
 
 const contentDesign = document.querySelector(".js-design");
 const contentFill = document.querySelector(".js-fill");
