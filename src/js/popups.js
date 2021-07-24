@@ -1,15 +1,20 @@
 "use strict";
 
-//collapsible
+//Pop-up consts
+const bio = document.querySelector(".js-bio");
+const work = document.querySelector(".js-work");
+const hobbies = document.querySelector(".js.hobbies");
+const contact = document.querySelector(".js-contact");
+
 const popBio = document.querySelector(".js-bio-pop");
 const popWork = document.querySelector(".js-work-pop");
 const popHobbies = document.querySelector(".js-hobbies-pop");
 const popContact = document.querySelector(".js-contact-pop");
 
-const contentDesign = document.querySelector(".js-design");
-const contentFill = document.querySelector(".js-fill");
-const contentShare = document.querySelector(".js-share");
-const arrowShare = document.querySelector(".js-arrowS");
+// const contentDesign = document.querySelector(".js-design");
+// const contentFill = document.querySelector(".js-fill");
+// const contentShare = document.querySelector(".js-share");
+// const arrowShare = document.querySelector(".js-arrowS");
 
 contentFill.classList.add("hidden");
 contentShare.classList.add("hidden");
