@@ -36,7 +36,7 @@ function hiddenContact() {
 }
 
 function showBio() {
-  hiddenBio();
+  // hiddenBio();
   if (popBio.classList.contains("js-bio-pop")) {
     popWork.classList.add("hidden");
     popHobbies.classList.add("hidden");
@@ -53,15 +53,24 @@ function showWork() {
   }
 }
 
-function showShare() {
-  hiddenShare();
-  if (contentShare.classList.contains("js-share")) {
-    contentDesign.classList.add("hidden");
-    contentFill.classList.add("hidden");
+function showHobbies() {
+  hiddenHobbies();
+  if (popHobbies.classList.contains("js-hobbies-pop")) {
+    popContact.classList.add("hidden");
+    popBio.classList.add("hidden");
+    popWork.classList.add("hidden");
+  }
+}
+function showContact() {
+  hiddenContact();
+  if (popContact.classList.contains("js-contact-pop")) {
+    popBio.classList.add("hidden");
+    popWork.classList.add("hidden");
+    popHobbies.classList.add("hidden");
   }
 }
 
-popBio.addEventListener("click", showBio);
-popContact.addEventListener("click", showFill);
-popWork.addEventListener("click", showShare);
-popHobbies.addEventListener("click", showShare);
+bio.addEventListener("click", showBio);
+contact.addEventListener("click", showFill);
+work.addEventListener("click", showShare);
+hobbies.addEventListener("click", showShare);
