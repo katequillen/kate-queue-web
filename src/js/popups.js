@@ -17,7 +17,7 @@ const popContact = document.querySelector(".js-contact-pop");
 // popContact.classList.add("hidden");
 
 function hiddenBio() {
-  popBio.classList.add("hidden");
+  bio.classList.add("hidden");
   //arrowDesign.classList.add('arrowhidden');
 }
 function hiddenWork() {
