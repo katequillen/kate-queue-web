@@ -16,37 +16,40 @@ const popContact = document.querySelector(".js-contact-pop");
 // const contentShare = document.querySelector(".js-share");
 // const arrowShare = document.querySelector(".js-arrowS");
 
-contentFill.classList.add("hidden");
-contentShare.classList.add("hidden");
-arrowShare.classList.remove("collapsible__icon2");
-arrowShare.classList.add("arrowhidden");
-console.log(arrowShare);
+popBio.classList.add("hidden");
+popWork.classList.add("hidden");
+popHobbies.classList.add("hidden");
+popContact.classList.add("hidden");
 
-function hiddenDesign() {
-  contentDesign.classList.add("hidden");
+function hiddenBio() {
+  popBio.classList.add("hidden");
   //arrowDesign.classList.add('arrowhidden');
 }
-function hiddenFill() {
-  contentFill.classList.remove("hidden");
+function hiddenWork() {
+  popWork.classList.remove("hidden");
 }
-function hiddenShare() {
-  contentShare.classList.remove("hidden");
+function hiddenHobbies() {
+  popHobbies.classList.remove("hidden");
+}
+function hiddenContact() {
+  popContact.classList.remove("hidden");
 }
 
-function showDesign() {
-  hiddenDesign();
-  if (contentDesign.classList.contains("js-design")) {
-    contentFill.classList.add("hidden");
-    contentShare.classList.add("hidden");
-    contentDesign.classList.remove("hidden");
+function showBio() {
+  hiddenBio();
+  if (popBio.classList.contains("js-bio-pop")) {
+    popWork.classList.add("hidden");
+    popHobbies.classList.add("hidden");
+    popContact.classList.add("hidden"), popBio.classList.remove("hidden");
   }
 }
 
-function showFill() {
-  hiddenFill();
-  if (contentFill.classList.contains("js-fill")) {
-    contentDesign.classList.add("hidden");
-    contentShare.classList.add("hidden");
+function showWork() {
+  hiddenWork();
+  if (popWork.classList.contains("js-work-pop")) {
+    popHobbies.classList.add("hidden");
+    popContact.classList.add("hidden");
+    popBio.classList.add("hidden");
   }
 }
 
@@ -58,6 +61,7 @@ function showShare() {
   }
 }
 
-cdesign.addEventListener("click", showDesign);
-cfill.addEventListener("click", showFill);
-cshare.addEventListener("click", showShare);
+popBio.addEventListener("click", showBio);
+popContact.addEventListener("click", showFill);
+popWork.addEventListener("click", showShare);
+popHobbies.addEventListener("click", showShare);
