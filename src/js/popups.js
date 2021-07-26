@@ -11,15 +11,10 @@ const popWork = document.querySelector(".js-work-pop");
 const popHobbies = document.querySelector(".js-hobbies-pop");
 const popContact = document.querySelector(".js-contact-pop");
 
-// const contentDesign = document.querySelector(".js-design");
-// const contentFill = document.querySelector(".js-fill");
-// const contentShare = document.querySelector(".js-share");
-// const arrowShare = document.querySelector(".js-arrowS");
-
-popBio.classList.add("hidden");
-popWork.classList.add("hidden");
-popHobbies.classList.add("hidden");
-popContact.classList.add("hidden");
+// popBio.classList.add("hidden");
+// popWork.classList.add("hidden");
+// popHobbies.classList.add("hidden");
+// popContact.classList.add("hidden");
 
 function hiddenBio() {
   popBio.classList.add("hidden");
@@ -36,11 +31,12 @@ function hiddenContact() {
 }
 
 function showBio() {
-  // hiddenBio();
+  hiddenBio();
   if (popBio.classList.contains("js-bio-pop")) {
     popWork.classList.add("hidden");
     popHobbies.classList.add("hidden");
-    popContact.classList.add("hidden"), popBio.classList.remove("hidden");
+    popContact.classList.add("hidden");
+    popBio.classList.remove("hidden");
   }
 }
 
